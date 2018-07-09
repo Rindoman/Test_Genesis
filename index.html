@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Test_Genesis</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <div id="modal-window"></div>
+            <div class="modal-win">
+                <p class="modal-num"></p>
+                <p class="modal-text"></p>
+            </div>
+            <div class="gradient"></div>
+            <div class="nav">
+                <ul class="links">
+                    <li>
+                        <a href="#">Название1</a>
+                    </li>
+                    <li>
+                        <a href="#">Название2</a>
+                    </li>
+                    <li>
+                        <a href="#">Название3</a>
+                    </li>
+                    <li>
+                        <a href="#">Название4</a>
+                    </li>
+                    <li>
+                        <a href="#">Очень длинное название5</a>
+                    </li>
+                    <li>
+                        <a href="#">Очень oчень длинное название6</a>
+                    </li>
+                    <li>
+                        <a href="#">Длинное название7</a>
+                    </li>
+                    <li>
+                        <a href="#">Длинное название8</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="empty-block"></div>
+            <div class="circle">
+                <div class="heart">
+                    <svg enable-background="new -0.709 -11.555 141.732 141.732" height="60px" id="Livello_1" version="1.1" viewBox="-0.709 -11.555 141.732 141.732"
+                        width="60px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Livello_82">
+                            <path d="M140.314,37.654C140.314,16.858,123.402,0,102.537,0c-13.744,0-25.77,7.317-32.379,18.255C63.549,7.317,51.521,0,37.777,0   C16.912,0,0,16.858,0,37.654c0,10.821,4.588,20.57,11.922,27.438h-0.01l54.084,51.584c0.992,1.188,2.48,1.945,4.148,1.945   c1.545,0,2.936-0.653,3.92-1.696l54.346-51.833h-0.016C135.729,58.225,140.314,48.476,140.314,37.654"
+                            />
+                        </g>
+                        <g id="Livello_1_1_" />
+                    </svg>
+                </div>
+            </div>
+            <div class="questions">
+                <h2 class="caption">lorem ipsum</h2>
+                <h3 class="descr">Mauris vel nisi ac orci placerat semper. Aenean sapien massa.</h3>
+                <h2 class="caption_2">lorem ipsum?</h2>
+                <button class="btn" id="start">начать</button>
+                <input type="button" id="btn1" class="ansver" name="btn1" value="Вариант A" />
+                <input type="button" id="btn2" class="ansver" name="btn2" value="Вариант B" />
+                <input type="button" id="btn3" class="ansver" name="btn3" value="Вариант C" />
+            </div>
+            <div class="registration">
+                <div class="reg-btn">
+                    <button class="male reg">
+                        <img src="img/male.png" alt="">
+                        <span>Вариант A</span>
+                    </button>
+                    <button class="female reg">
+                        <img src="img/female.png" alt="">
+                        <span>Вариант B</span>
+                    </button>
+                </div>
+                <form method="#" class="form">
+                    <div class="input-block">
+                        <label class="" for="name">Ваше имя:</label>
+                        <div class="input-wrapper input-name" data-description="Введите свое имя с заглавной буквы.">
+                            <input class="input" type="text" name="name" id="name" placeholder="Введите свое имя" required oninput="checkRegistrFields.checkRegName()">
+                        </div>
+                    </div>
+                    <div class="input-block">
+                        <label class="" for="email">Email:</label>
+                        <div class="input-wrapper input-email" data-description="Введите свой e-mail.">
+                            <input class="input" type="email" name="email" id="new-email" placeholder="Неверный формат email" required oninput="checkRegistrFields.checkRegEmail()">
+                        </div>
+                    </div>
+                    <div class="input-block">
+                        <label class="" for="pass">Придумайте пароль:</label>
+                        <div class="input-wrapper input-pass" data-description="Пароль должен быть не менее 5-ти символов без пробелов.">
+                            <input class="input" type="password" name="pass" id="new_pass" placeholder="Придумайте новый пароль" required oninput="checkRegistrFields.checkRegPass()">
+                        </div>
+                    </div>
+                    <div id="error-message"></div>
+                    <div class="checkbox-block">
+                        <input class="checkbox" id="policy" type="checkbox" name="policy" required>
+                        <label class="label">
+                            <a href="#" class="policylink">Регистрируясь, вы подтверждаете, что вам уже исполнилось 18 лет и вы ознакомились с условиями пользования сайтом</a>
+                        </label>
+                    </div>
+                    <button id="submit" class="btn" type="submit" name="button">продолжить</button>
+                </form>
+            </div>
+            <button id="btn4" class="btn">Продолжить</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
